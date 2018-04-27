@@ -1,0 +1,13 @@
+<h1>There are totally {{ wordCount }} word!!!</h1>
+
+<a href="http://google.com">start here</a>
+
+<h1>Text information:</h1>
+{{ textInfo }}
+
+<h1>Word Count:</h1>
+
+{% for word, countTotal in wordDictionary %}
+{{ word }} - {{ countTotal }}
+<br />
+{% endfor %}
